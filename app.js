@@ -1,15 +1,8 @@
-var person /* : {
-  name: string;
-  age: number;
-} */ = {
+var person = {
     name: 'Mauro',
     age: 29,
-    hobbies: ['sports', 'cooking']
+    hobbies: ['sports', 'cooking'],
+    role: ['author', 30]
 };
-var favoriteActivities;
-favoriteActivities = ['sports', 100, true];
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby);
-}
-console.log(person.name);
+person.role.push('admin');
+person.role[1] = 10;

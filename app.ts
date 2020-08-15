@@ -1,18 +1,14 @@
-const person /* : {
+const person: {
   name: string;
   age: number;
-} */ = {
+  hobbies: string[];
+  role: [string, number];
+} = {
   name: 'Mauro',
   age: 29,
   hobbies: ['sports', 'cooking'],
+  role: ['author', 30],
 };
 
-let favoriteActivities: any[];
-
-favoriteActivities = ['sports', 100, true];
-
-for (const hobby of person.hobbies) {
-  console.log(hobby.toLocaleUpperCase());
-}
-
-// console.log(person.name);
+person.role.push('admin');
+person.role[1] = 10;
