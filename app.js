@@ -1,12 +1,13 @@
-function add(a, b, showResult) {
+function add(n1, n2, showResult, phrase) {
     if (showResult) {
-        console.log(a + b);
+        console.log(phrase + (n1 + n2));
     }
     else {
-        return a + b;
+        return n1 + n2;
     }
 }
 var num1 = 10;
 var num2 = 5;
 var printResult = true;
-add(50, 5, true);
+var resultPhrase = 'Result is: ';
+add(50, 5, true, resultPhrase);
