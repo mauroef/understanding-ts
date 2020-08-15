@@ -1,16 +1,10 @@
-function add(n1, n2) {
-    return n1 + n2;
+var userInput;
+var userName;
+userInput = 'Mauro';
+if (typeof userInput === 'string') {
+    userName = userInput;
 }
-function printResult(num) {
-    console.log('Result: ' + num);
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
 }
-function addAndHandle(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-}
-var combinedValues;
-combinedValues = add;
-// console.log(combinedValues(10, 65));
-addAndHandle(10, 20, function (result) {
-    console.log(result);
-});
+generateError('An error ocurred!', 500);
