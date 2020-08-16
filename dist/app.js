@@ -1,10 +1,12 @@
-var userInput;
-var userName;
+"use strict";
+let userInput;
+let userName;
 userInput = 'Mauro';
 if (typeof userInput === 'string') {
     userName = userInput;
 }
 function generateError(message, code) {
-    throw { message: message, errorCode: code };
+    throw { message, errorCode: code };
 }
 generateError('An error ocurred!', 500);
+//# sourceMappingURL=app.js.map
